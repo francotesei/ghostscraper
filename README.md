@@ -150,4 +150,4 @@ MIT License.
 
 ### 💻 Author
 
-> Franco Tesei – [ftesei96@gmail.com](mailto:ftesei96@gmail.com)
+> Franco Tesei –
