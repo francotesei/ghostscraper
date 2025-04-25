@@ -1,0 +1,27 @@
+[project]
+name = "ghostscraper"
+version = "0.1.0"
+description = "Anonymous scraping with Tor-based IP rotation"
+readme = "README.md"
+authors = [
+    { name = "Franco Tesei" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "requests[socks]",
+    "fake-useragent",
+    "stem",
+    "tenacity",
+    "zeep",
+    "websockets",
+    "python-dotenv>=1.1.0",
+]
+[project.scripts]
+ghostscraper = "ghostscraper:main"
+ghostscraper-rest-example = "examples.rest_example:main"
+ghostscraper-soap-example = "examples.soap_example:main"
+ghostscraper-socket-example = "examples.socket_example:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
